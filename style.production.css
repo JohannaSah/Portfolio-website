@@ -511,3 +511,17 @@ button:hover, button:focus, .button:hover, .button:focus {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
+
+@keyframes hamburg_skyline-fade-in {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+
+.hamburg_skyline_svg {
+  animation-duration: 20s;
+  animation-name: hamburg_skyline-fade-in;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
