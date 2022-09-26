@@ -413,3 +413,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+#hamburg_skyline_svg_about {
+  margin-left: 5%;
+}
