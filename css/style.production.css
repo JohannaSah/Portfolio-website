@@ -5,7 +5,6 @@
 * Browsers: last 40 version
 */
 
-
 /* ###
 - redo the design info by choosing proper colours and fonts
 - when that is done, change
@@ -535,4 +534,8 @@ button:hover, button:focus, .button:hover, .button:focus {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+#hamburg_skyline_svg_about {
+  margin-left: 5%;
 }
