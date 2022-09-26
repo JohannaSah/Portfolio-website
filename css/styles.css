@@ -407,6 +407,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .hamburg_skyline_svg {
+  margin-left: 27%;
   animation-duration: 20s;
   animation-name: hamburg_skyline-fade-in;
   animation-iteration-count: infinite;
