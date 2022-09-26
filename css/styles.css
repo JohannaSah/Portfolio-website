@@ -401,16 +401,16 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @keyframes hamburg_skyline-fade-in {
-  0% {opacity: 1;}
+  0% {opacity: 0;}
   50% {opacity: 0.5;}
-  100% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .hamburg_skyline_svg {
   margin-left: 27%;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-name: hamburg_skyline-fade-in;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 
