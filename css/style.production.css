@@ -513,25 +513,25 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @-webkit-keyframes hamburg_skyline-fade-in {
-  0% {opacity: 1;}
+  0% {opacity: 0;}
   50% {opacity: 0.5;}
-  100% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes hamburg_skyline-fade-in {
-  0% {opacity: 1;}
+  0% {opacity: 0;}
   50% {opacity: 0.5;}
-  100% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .hamburg_skyline_svg {
   margin-left: 27%;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  -webkit-animation-duration: 15s;
+            animation-duration: 15s;
   -webkit-animation-name: hamburg_skyline-fade-in;
           animation-name: hamburg_skyline-fade-in;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
