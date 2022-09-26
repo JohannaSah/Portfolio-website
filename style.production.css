@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 50 version
+* Browsers: last 40 version
 */
 /* ###
 - redo the design info by choosing proper colours and fonts
@@ -24,26 +24,43 @@ Primary font: Dancing Script
 secondary font: Palanquin
 */
 :root {
+  --primary-colour: #AE9152;
   /* gold */
+  --secondary-colour: #BFD9D7;
   /* linden green */
+  --text-colour-dark: #353745;
   /* soft dark grey */
+  --text-colour-light: #ffffff;
   /* white */
+  --background-colour: #fdfcfb;
   /* off-white */
+  --primary-colour-dark: #796539;
   /* dark-gold */
+  --primary-colour-light: #CAAA64;
   /* light gold */
+  --secondary-colour-light: #DFECEB;
   /* light linden green */
+  --link-colour-active: #3b44f6;
   /* blue */
+  --font-size-main: 16px;
+  --font-size-footer-heading: 18px;
+  --font-size-navigation__item: 20px;
+  --font-size-h1: 50px;
+  --font-size-h2: 24px;
+  --font-size-button: 16px;
+  --font-size-button-large: 18px;
+  --font-size-h1-small-screen: 22px;
 }
 
 /* //Styling concering all the pages of the website // */
 /* Styling the body in general */
 body {
-  background-color: #fdfcfb;
+  background-color: var(--background-colour);
   font-family: 'Palanquin', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-main);
   line-height: 1.6;
-  color: #353745;
+  color: var(--text-colour-dark);
 }
 
 /* This changes the default setting regarding width, including the padding and border in the width
@@ -59,7 +76,7 @@ as opposed to adding it to the specified width */
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #BFD9D7;
+  background-color: var(--secondary-colour);
   width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -95,7 +112,7 @@ as opposed to adding it to the specified width */
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-  font-size: 20px;
+  font-size: var(--font-size-navigation__item);
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -119,7 +136,7 @@ as opposed to adding it to the specified width */
 
 /* Styling the footer within the body */
 .page-footer {
-  background-color: #BFD9D7;
+  background-color: var(--secondary-colour);
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -137,7 +154,7 @@ as opposed to adding it to the specified width */
 I did this because it due to screen reader accessibility I had to give them different headers */
 #find-me-on__header {
   font-family: 'Palanquin', sans-serif;
-  font-size: 18px;
+  font-size: var(--font-size-footer-heading);
   font-weight: 700;
 }
 
@@ -149,26 +166,26 @@ I did this because it due to screen reader accessibility I had to give them diff
 /* This styles the h1 headers in general */
 .section__header1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  font-size: var(--font-size-h1);
   font-weight: 700;
 }
 
 /* This styles the h2 headers in general */
 .section__header2 {
   font-family: 'Palanquin', sans-serif;
-  font-size: 24px;
+  font-size: var(--font-size-h2);
   font-weight: 700;
 }
 
 /* Styling the hyperlinks */
 /* the following gives the hyperlinks all the same colour */
 a {
-  color: #AE9152;
+  color: var(--primary-colour);
 }
 
 /* the following gives a link that has been visited a different colour */
 a:visited {
-  color: #796539;
+  color: var(--primary-colour-dark);
 }
 
 /* the following removes the underline when the mouse hovers over the link
@@ -179,34 +196,18 @@ a:hover, a:focus {
 
 /* the following gives a link that has been selevted a different colour */
 a:active {
-  color: #3b44f6;
+  color: var(--link-colour-active);
 }
 
 /* Styling the buttons */
 /* The following styles the shape, colors, font, decoration of the buttons*/
-button {
+button, .button {
   border: none;
   font-family: inherit;
-  background-color: #CAAA64;
-  font-size: 16px;
+  background-color: var(--primary-colour-light);
+  font-size: var(--font-size-button);
   text-decoration: none;
-  color: #ffffff;
-  padding: 10px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.3s opacity;
-  -o-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-}
-
-.button {
-  border: none;
-  font-family: inherit;
-  background-color: #CAAA64;
-  font-size: 16px;
-  text-decoration: none;
-  color: #ffffff;
+  color: var(--text-colour-light);
   padding: 10px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -224,7 +225,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button:visited {
-  color: #ffffff;
+  color: var(--text-colour-light);
 }
 
 /* This styles the largest sections within the main sections of each page */
@@ -319,7 +320,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button__contact-me-now {
-  font-size: 18px;
+  font-size: var(--font-size-button-large);
 }
 
 /* This tells browser to use the grid, if it supports the feature */
@@ -335,7 +336,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
   /* The following styles the grid items */
   .project-list__item {
-    background-color: #DFECEB;
+    background-color: var(--secondary-colour-light);
     /* maybe use #e6decb or #bfd9d7 */
     padding: 20px 30px 35px;
     -webkit-border-radius: 30px;
@@ -356,7 +357,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-/* The following creates responsive design in regards to screen width */
+/* The following creates responsive design in ragards to screen width */
 @media all and (min-width: 500px) and (max-width:750px) {
   .project-list {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -370,7 +371,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 
   .h1 {
-    font-size: 22px;
+    font-size: var(--font-size-h1-small-screen);
   }
 }
 
@@ -387,7 +388,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 
   .h1 {
-    font-size: 22px;
+    font-size: var(--font-size-h1-small-screen);
   }
 }
 
@@ -512,16 +513,45 @@ button:hover, button:focus, .button:hover, .button:focus {
   animation-timing-function: linear;
 }
 
-@keyframes hamburg_skyline-fade-in {
-  0% {opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 0;}
+/*
+animation of hamburg skyline svg
+---- why does it not work???????-----
+*/
+@-webkit-keyframes hamburg_skyline-fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.hamburg_skyline_svg {
+@keyframes hamburg_skyline-fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#hamburg_skyline_svg {
+  -webkit-animation-duration: 20s;
   animation-duration: 20s;
+  -webkit-animation-name: hamburg_skyline-fade-in;
   animation-name: hamburg_skyline-fade-in;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
