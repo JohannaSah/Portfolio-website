@@ -1,0 +1,176 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+  <!--
+    ###
+    - work on the meta data, it is no good yet
+    - maybe change page title
+    ### //
+  -->
+  <meta charset="utf-8" name="JS Portfolio Site" content=" This is a fullstack web developer's (Johanna Sahlberg) Portfolio Site. Check out the work. " >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Home </title>
+
+    <!-- following link is for the favicon // -->
+  <link rel="icon" type="image/png" href="img/JS-favicon-32x32.png" sizes="32x32" />
+
+    <!-- following link connects to a CDN (content delivery network) to nomralise css
+    forcing the browser to render all elements more consistently and inline with modern standards // -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- following link embeds the chosen 2 fonts, it needs to be embeded ahead of the link to the css file // -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- following link connects HTML file with CSS file // -->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+</head>
+
+<body>
+
+  <header class="page-header">
+
+      <img src="img/JS-logo.png" alt="logo in stylised text Johanna Sahlberg, fullstack web developer" id="header-image__logo" class="page-header__item">
+
+      <nav class="page-header__item">
+        <ul id="header-links__ul" role="menubar" class="navigation-list">
+            <li role="presentation" class="navigation__item">
+              <a href="index.html" id="header-link__home" class="navigation-list__item" role="menuitem"> Home </a>
+            </li>
+            <li role="presentation" class="navigation__item">
+              <a href="about.html" id="header-link__about" class="navigation-list__item" role="menuitem"> About me </a>
+            </li>
+            <li role="presentation" class="navigation__item">
+              <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active"> My Work </a>
+            </li>
+            <li role="presentation" class="navigation__item">
+              <a href="contact.html" id="header-link__contact" class="navigation-list__item" role="menuitem"> Contact </a>
+            </li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <main class="page-main">
+
+    <section class="work">
+
+      <h1 id="my-work" class="section__header1 work-section__header1"> My Work </h1>
+
+      <!-- The following will contain the grid layout -->
+      <div class="project-list">
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Project 1 </h2>
+
+          <p class="project-list__paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+            aliquip ex ea commodo consequat."
+          </p>
+
+          <a href="#" class="project-list__link"> Check out project 1 on GitHub </a>
+        </div>
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Project 2 </h2>
+
+          <p class="project-list__paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+            aliquip ex ea commodo consequat."
+          </p>
+
+          <a href="#" class="project-list__link"> Check out project 2 on GitHub </a>
+        </div>
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Project 3 </h2>
+
+          <p class="project-list__paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+            aliquip ex ea commodo consequat."
+          </p>
+
+          <a href="#" class="project-list__link"> Check out project 3 on GitHub </a>
+        </div>
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Project 4 </h2>
+
+          <p class="project-list__paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+            aliquip ex ea commodo consequat."
+          </p>
+
+          <a href="#" class="project-list__link"> Check out project 4 on GitHub </a>
+        </div>
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Project 5 </h2>
+
+          <p class="project-list__paragraph">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+            aliquip ex ea commodo consequat."
+          </p>
+
+          <a href="#" class="project-list__link"> Check out project 5 on GitHub </a>
+        </div>
+
+        <div class="project-list__item">
+          <h2 class="section__header2 project-list-item__header"> Your project? </h2>
+
+          <p class="project-list__paragraph">
+            You need help with your front- and/or back-end projects? <br>
+            As a fullstack web developer I can help you build your dream websites and apps! <br>
+            I have skills in the following technologies <br>
+            - HTML <br>
+            - CSS <br>
+            - ... <!-- add more as needed --> <br>
+            and I am ore than happy to learn other technologies if needed.
+          </p>
+
+          <a href="contact.html" type="button" class="button">
+            Contact me now
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+
+      <h2 id="find-me-on__header" class="page-footer__item page-footer__header">
+         Find me on
+      </h2>
+
+      <!--
+        ###
+        - In future only have icons of media you use and are reachable on
+        ### //
+      -->
+      <div class="page-footer__item page-footer__icons">
+        <a href="https://github.com/JohannaSah" target="_blank">
+          <img src="img/icon_github.svg" alt="Github icon" class="icon-image" id="github-icon">
+        </a>
+          <img src="img/icon_twitter.svg" alt="Twitter icon" class="icon-image" id="twitter-icon">
+        <a href="https://www.linkedin.com/in/johanna-sahlberg/" target="_blank">
+          <img src="img/icon_linkedin.svg" alt="LinkedIn icon" class="icon-image" id="linkedin-icon">
+        </a>
+      </div>
+
+  </footer>
+
+</body>
+
+</html>

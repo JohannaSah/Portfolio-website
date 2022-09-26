@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+      ###
+      - work on the meta data, it is no good yet
+      - maybe change page title
+      ### //
+    -->
+    <meta charset="utf-8" name="JS Portfolio Site" content=" This is a fullstack web developer's (Johanna Sahlberg) Portfolio Site. Check out the work. " >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Home </title>
+
+      <!-- following link is for the favicon // -->
+    <link rel="icon" type="image/png" href="img/JS-favicon-32x32.png" sizes="32x32" />
+
+      <!-- following link connects to a CDN (content delivery network) to nomralise css
+      forcing the browser to render all elements more consistently and inline with modern standards // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- following link embeds the chosen 2 fonts, it needs to be embeded ahead of the link to the css file // -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <!-- following link connects HTML file with CSS file // -->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <img src="img/JS-logo.png" alt="logo in stylised text Johanna Sahlberg, fullstack web developer" id="header-image__logo" class="page-header__item">
+
+        <nav class="page-header__item">
+          <ul id="header-links__ul" role="menubar" class="navigation-list">
+              <li role="presentation" class="navigation__item">
+                <a href="index.html" id="header-link__home" class="navigation-list__item navigation-list__item--active" role="menuitem"> Home </a>
+              </li>
+              <li role="presentation" class="navigation__item">
+                <a href="about.html" id="header-link__about" class="navigation-list__item" role="menuitem"> About me </a>
+              </li>
+              <li role="presentation" class="navigation__item">
+                <a href="work.html" role="menuitem" class="navigation-list__item"> My Work </a>
+              </li>
+              <li role="presentation" class="navigation__item">
+                <a href="contact.html" id="header-link__contact" class="navigation-list__item" role="menuitem"> Contact </a>
+              </li>
+          </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="page-main">
+
+        <section class="profile">
+
+            <!--
+            ###
+            - have professional pictures taken and replace this picture
+            - adjust alt accordingly
+            ### //
+            -->
+            <section class="profile-section__image">
+                <img src="img/portraits/Johanna-Sahlberg-portrait.JPEG" alt="Oval portait of a smiling Johanna" id="profile-section__portrait" class="images profile-section__image profile__portrait">
+            </section>
+
+            <section class="profile-section">
+                <h1 id="hello-world" class="section__header1 profile-section__header1">
+                   Hello World
+                </h1>
+
+                <p id="introduction-pragraph" class="profile-section__paragraph">
+                  My name is Johanna Sahlberg. <br> I am a <span id="text__fullstack-web-developer">fullstack web developer</span> and I love creating beautiful and functional websites.
+                </p>
+
+                <p>
+                  <a href="work.html" id="check-out-my-work-link" class="profile-section__link">
+                     Come check out some of my work
+                  </a>
+
+                  or read all
+
+                  <a href="about.html" id="read-all-about-me-link" class="profile-section__link">
+                  about me here.
+                  </a>
+
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+
+        <h2 id="find-me-on__header" class="page-footer__item page-footer__header">
+           Find me on
+        </h2>
+
+        <!--
+          ###
+          - In future only have icons of media you use and are reachable on
+          ### //
+        -->
+        <div class="page-footer__item page-footer__icons">
+          <a href="https://github.com/JohannaSah" target="_blank">
+            <img src="img/icon_github.svg" alt="Github icon" class="icon-image" id="github-icon">
+          </a>
+            <img src="img/icon_twitter.svg" alt="Twitter icon" class="icon-image" id="twitter-icon">
+          <a href="https://www.linkedin.com/in/johanna-sahlberg/" target="_blank">
+            <img src="img/icon_linkedin.svg" alt="LinkedIn icon" class="icon-image" id="linkedin-icon">
+          </a>
+        </div>
+
+    </footer>
+
+    <!--
+      The following is a plugin for tota11y, which tests whether the web page is screen reader friendly
+      ###
+      - once the final product is screen reader friendly, remove the plugin
+      ### //
+    -->
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
