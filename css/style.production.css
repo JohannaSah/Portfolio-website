@@ -275,14 +275,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 /* Styling concerning just the contact page */
-#contact-section__image {
+.contact-section__svg {
   float: left;
-  -webkit-border-radius: 3%;
-          border-radius: 3%;
-  width: 300px;
+  width: 360px;
   height: auto;
-  margin-right: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .contact-section__paragraph {
@@ -312,6 +309,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 .work {
   margin: 20px;
   padding: 10px;
+}
+
+#my-work{
+  font-size: 72px;
 }
 
 /* This is the fallback option for the browsers that cannot use grid */
@@ -358,7 +359,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-/* The following creates responsive design in ragards to screen width */
+/* The following creates responsive design in regards to screen width */
 @media all and (min-width: 500px) and (max-width:750px) {
   .project-list {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -393,131 +394,12 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-/*
-###
-- styling for svg animation on about page, should be changed for final project as I want a different city attached to my site
-### //
-*/
-@-webkit-keyframes sun-color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-@keyframes sun-color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-name: sun-color-change;
-          animation-name: sun-color-change;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-/* what am I doing wrong here?? I cannot animate the clouds*/
-@-webkit-keyframes cloud-front-moving {
-  from {
-    -webkit-transform: translate(0px, 50px);
-            transform: translate(0px, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-@keyframes cloud-front-moving {
-  from {
-    -webkit-transform: translate(0px, 50px);
-            transform: translate(0px, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-name: cloud-front-moving;
-          animation-name: cloud-front-moving;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-back-move {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
-}
-
-@keyframes cloud-back-move {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-name: cloud-back-move;
-          animation-name: cloud-back-move;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
+/* Styling the hamburg svg on home and about*/
 @-webkit-keyframes hamburg_skyline-fade-in {
   0% {opacity: 0;}
   50% {opacity: 0.5;}
   100% {opacity: 1;}
 }
-
 @keyframes hamburg_skyline-fade-in {
   0% {opacity: 0;}
   50% {opacity: 0.5;}
@@ -527,7 +409,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .hamburg_skyline_svg {
   margin-left: 27%;
   -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+          animation-duration: 15s;
   -webkit-animation-name: hamburg_skyline-fade-in;
           animation-name: hamburg_skyline-fade-in;
   -webkit-animation-iteration-count: 1;
@@ -538,4 +420,52 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 #hamburg_skyline_svg_about {
   margin-left: 5%;
+}
+
+
+/*stying the logo svg on contact*/
+@-webkit-keyframes network-zoom-in {
+  0% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes network-zoom-in {
+  0% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.network {
+ -webkit-animation: network-zoom-in 12s ease-in 1;
+         animation: network-zoom-in 12s ease-in 1;
 }
