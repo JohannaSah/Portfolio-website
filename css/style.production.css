@@ -46,7 +46,7 @@ secondary font: Palanquin
   --font-size-main: 16px;
   --font-size-footer-heading: 18px;
   --font-size-navigation__item: 20px;
-  --font-size-h1: 50px;
+  --font-size-h1: 55px;
   --font-size-h2: 24px;
   --font-size-button: 16px;
   --font-size-button-large: 18px;
@@ -331,7 +331,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     /* !!! maybe change this to just 3 1frs */
     grid-gap: 20px;
   }
@@ -407,7 +407,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .hamburg_skyline_svg {
-  margin-left: 27%;
+  margin-left: 35%;
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
   -webkit-animation-name: hamburg_skyline-fade-in;
