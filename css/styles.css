@@ -100,6 +100,7 @@ as opposed to adding it to the specified width */
   text-decoration: none;
 }
 
+
 /* This styles the logo within each header */
 #header-image__logo {
   height: 180px;
@@ -347,7 +348,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .hamburg_skyline_svg {
   margin-left: 35%;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-name: hamburg_skyline-fade-in;
   animation-iteration-count: 1;
   animation-timing-function: linear;
