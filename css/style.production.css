@@ -128,12 +128,14 @@ as opposed to adding it to the specified width */
   text-decoration: none;
 }
 
+
 /* This styles the logo within each header */
 #header-image__logo {
   height: 180px;
   width: 180px;
   margin-left: 5%;
 }
+
 
 /* Styling the footer within the body */
 .page-footer {
@@ -331,7 +333,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* !!! maybe change this to just 3 1frs */
     grid-gap: 20px;
   }
@@ -408,8 +410,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .hamburg_skyline_svg {
   margin-left: 35%;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
   -webkit-animation-name: hamburg_skyline-fade-in;
           animation-name: hamburg_skyline-fade-in;
   -webkit-animation-iteration-count: 1;
