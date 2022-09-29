@@ -401,6 +401,33 @@ button:focus,
   }
 }
 
+.svg {
+  width: 100%;
+  height: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  min-width: 200px;
+  min-height: auto;
+  max-width: 700px;
+  max-height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 /* Styling the hamburg svg on home and about */
 @-webkit-keyframes hamburg_skyline-fade-in {
   0% { opacity: 0; }
@@ -415,7 +442,6 @@ button:focus,
 }
 
 .hamburg_skyline_svg {
-  margin-left: 35%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-name: hamburg_skyline-fade-in;
