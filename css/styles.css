@@ -345,6 +345,8 @@ button:focus,
   }
 }
 
+/* Styling the hamburg svg on home and about */
+
 .svg {
   width: 100%;
   height: auto;
@@ -359,13 +361,6 @@ button:focus,
   align-items: flex-end;
 }
 
-/* Styling the hamburg svg on home and about */
-@keyframes hamburg_skyline-fade-in {
-  0% { opacity: 0; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
-}
-
 .hamburg_skyline_svg {
   animation-duration: 10s;
   animation-name: hamburg_skyline-fade-in;
@@ -375,6 +370,12 @@ button:focus,
 
 #hamburg_skyline_svg_about {
   margin-left: 5%;
+}
+
+@keyframes hamburg_skyline-fade-in {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
 /* styling the logo svg on contact */
