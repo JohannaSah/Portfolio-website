@@ -370,10 +370,12 @@ button:focus,
     transform-origin: center;
     transform: scale(0);
   }
+
   50% {
     transform-origin: center;
     transform: scale(1.2);
   }
+
   100% {
     transform-origin: center;
     transform: scale(1);
