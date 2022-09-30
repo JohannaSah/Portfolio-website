@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html lang="de">
 
 <head>
   <!--
@@ -8,7 +8,9 @@
       - work on the meta data, it is no good yet
       ### //
     -->
-  <meta charset="utf-8" name="JS Portfolio Site" content=" This is a fullstack web developer's (Johanna Sahlberg) Portfolio Site. Check out the work. ">
+  <meta charset="utf-8">
+
+  <meta name="JS Portfolio Site" content=" This is a fullstack web developer's (Johanna Sahlberg) Portfolio Site. Check out the work.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,7 +54,7 @@
           <a href="contact-german.html" id="header-link__contact" class="navigation-list__item navigation-list__item--active" role="menuitem"> Kontakt </a>
         </li>
         <li role="presentation" class="navigation__item">
-          <ul role="language menu bar" class="navigation__item navigation__item-language-list">
+          <ul role="menubar" class="navigation__item navigation__item-language-list">
             <li role="presentation" class="navigation__item-language">
               <a href="contact.html"> <img src="img/icon_british-flag.png" alt="clickable britsh flag icon" class="language-icon-img"> </a>
             </li>
@@ -73,9 +75,9 @@
 
     <section class="contact">
 
-      <section class="contact-section contact-section__svg">
+      <div class="contact-section contact-section__svg">
         <a href="index-german.html">
-          <svg title="clickable animated logo image with link to homepage" id="logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="340" preserveAspectRatio="xMidYMid meet" version="1.0">
+          <svg id="logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="340" preserveAspectRatio="xMidYMid meet">
             <defs>
               <g />
               <clipPath id="b925de21b0">
@@ -531,7 +533,7 @@
             </g>
           </svg>
         </a>
-      </section>
+      </div>
 
       <section class="contact-section">
         <h1 id="h1__contact" class="section__header1 contact-section__header1">
@@ -539,7 +541,7 @@
         </h1>
 
         <p class="contact-section__paragraph">
-          <a href="mailto:johanna.sahlberg@outlook.de ?subject= Contact via website " id="link__contact-me" class="links contact-section__link">
+          <a href="mailto:johanna.sahlberg@outlook.de ?subject= Contact via website" id="link__contact-me" class="links contact-section__link">
             Klickt hier um mich zu kontaktieren
           </a>
           oder schickt mir eine Nachricht über das untenstehende Formular.
@@ -560,7 +562,7 @@
           Kontakt formular
         </h2>
 
-        <form action="mailto: johanna.sahlberg@outlook.de " method="post" id="contact-form" class="contact-section__form" name="Contact form">
+        <form action="mailto:johanna.sahlberg@outlook.de " method="post" id="contact-form" class="contact-section__form" name="Contact form">
 
           <label class="standard-label standard-label__email" for="contact-form-input__email"> Deine E-mail Adresse: </label>
           <input type="email" id="contact-form-input__email" class="contact-form__input" required> <br>
@@ -571,10 +573,10 @@
           <!-- ? add country ID later with js ? -->
 
           <label class="standard-label standard-label__message" for="contact-form-input__message"> Deine Nachricht*:</label>
-          <textarea type="text" id="contact-form-input__message" class="contact-form__input" rows="8" cols="80" maxlength="500" required> </textarea>
+          <textarea id="contact-form-input__message" class="contact-form__input" rows="8" cols="80" maxlength="500" required> </textarea>
           <!-- not sure if rows and cols will be needed later in the process // -->
 
-          <p role="textfield-restriction-paragraph" id="contact-message__subtext">
+          <p id="contact-message__subtext">
             *max 500 Zeichen
           </p>
 
