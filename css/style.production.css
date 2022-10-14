@@ -251,8 +251,8 @@ button:focus,
   margin-right: 40px;
   width: 250px;
   height: auto;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  -webkit-border-radius: 48%;
+          border-radius: 48%;
   margin-bottom: 10px;
 }
 
