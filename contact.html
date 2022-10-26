@@ -564,17 +564,23 @@
 
         <form action="mailto:johanna.sahlberg@outlook.de " method="post" id="contact-form" class="contact-section__form" name="Contact form">
 
-          <label class="standard-label standard-label__email" for="contact-form-input__email"> Your e-mail adress: </label>
-          <input type="email" id="contact-form-input__email" class="contact-form__input" required> <br>
+          <div class="input-wrapper">
+            <label class="standard-label standard-label__email" for="contact-form-input__email"> Your e-mail adress: </label>
+            <input type="email" id="contact-form-input__email" class="contact-form__input" required> <br>
+          </div>
 
+          <div class="input-wrapper">
+            <label class="standard-label standard-label__tel" for="contact-form-input__tel"> Your phone number: </label>
+            <input type="tel" id="contact-form-input__tel" class="contact-form__input"> <br>
+            <!-- ? add country ID later with js ? -->
+          </div>
 
-          <label class="standard-label standard-label__tel" for="contact-form-input__tel"> Your phone number: </label>
-          <input type="tel" id="contact-form-input__tel" class="contact-form__input"> <br>
-          <!-- ? add country ID later with js ? -->
+          <div class="input-wrapper">
+            <label class="standard-label standard-label__message" for="contact-form-input__message"> Your message*:</label>
+            <textarea id="contact-form-input__message" class="contact-form__input" rows="8" cols="80" maxlength="500" required> </textarea>
+            <!-- not sure if rows and cols will be needed later in the process // -->
+          </div>
 
-          <label class="standard-label standard-label__message" for="contact-form-input__message"> Your message*:</label>
-          <textarea id="contact-form-input__message" class="contact-form__input" rows="8" cols="80" maxlength="500" required> </textarea>
-          <!-- not sure if rows and cols will be needed later in the process // -->
 
           <p id="contact-message__subtext">
             *max 500 characters
@@ -621,6 +627,7 @@
       ### //
     -->
   <script src="js/tota11y.min.js"></script>
+  <script src="js/script-contact-english.js"></script>
 
 </body>
 
