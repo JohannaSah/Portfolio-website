@@ -68,6 +68,10 @@ function validateMessage() {
 function validatePhone() {
   let value = phoneInput.value;
 
+  if (!value) {
+    return true;
+  }
+
   if (value.length < 7) {
     showErrorMessage(phoneInput, 'Please input a valid phone number including the area code');
     return false;
