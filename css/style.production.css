@@ -314,6 +314,11 @@ button:focus,
   margin-right: 40px;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.7em;
+}
+
 /* Styling concering just the work page */
 
 /* This styles the grid layout for the work page */
