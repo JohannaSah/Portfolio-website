@@ -91,6 +91,10 @@ form.addEventListener('submit', (e) => {
     alert ('Your message was successfully sent');
     // add a way for the message to be sent to designated email adress!!!!!
   }
+
+  emailInput.addEventListener('input', validateEmail);
+  phoneInput.addEventListener('input', validatePhone);
+  messageInput.addEventListener('input', validateMessage);
 })
 
 })()
