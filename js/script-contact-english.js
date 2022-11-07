@@ -30,7 +30,7 @@ function validateEmail() {
   let value = emailInput.value;
 
   if (!value) {
-    showErrorMessage(emailInput, 'Please inpur ypur email adress');
+    showErrorMessage(emailInput, 'Please input your email adress');
     return false;
   }
 
