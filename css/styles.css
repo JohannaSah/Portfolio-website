@@ -266,6 +266,10 @@ button:focus,
   margin-right: 40px;
 }
 
+.input-wrapper2 {
+  height: 100px;
+}
+
 .error-message {
   color: red;
   font-size: 0.7em;
